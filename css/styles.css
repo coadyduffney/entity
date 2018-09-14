@@ -1,0 +1,573 @@
+@font-face {
+  font-family: entity;
+  src: url(../fonts/28_days_later.ttf);
+}
+
+@font-face {
+  font-family: wow;
+  src: url(../fonts/LifeCraft_Font.ttf);
+}
+
+/* 
+RED -> #8C1616
+GREY -> #949494
+GREEN -> #35bd49
+BLUE -> #264e8c
+*/
+
+
+body {
+  background-image: url(../img/bfa_background.jpg);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: #35bd49;
+}
+
+::selection {
+  color: white;
+  background: #35bd49;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: entity;
+}
+
+h2 {
+  text-decoration: underline;
+  /* color: #35bd49; */
+  color: #aeadad;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 2px 0 #000,
+    3px 3px 0 #000;
+}
+
+h3 {
+  /* color: #35bd49; */
+  color: #aeadad;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    2px 2px 0 #000;
+}
+
+.heading-text {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.entity-header-text {
+  color: #c0bfbf;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 6px 0 #000,
+    4px 4px 0 #000;
+  font-size: 10rem;
+  margin-bottom: -25px;
+}
+
+.realm-text {
+  color: #c0bfbf;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 2px 0 #000,
+    2px 2px 0 #000;
+}
+
+.entity-brand-text {
+  color: #c0bfbf;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 3px 0 #000,
+    4px 4px 0 #000;
+  margin: 0;
+}
+
+.down-arrow {
+  font-size: 6rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 25px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 2px 0 #000, 2px 2px 0 #000;
+}
+
+.down-arrow a {
+  color: #c0bfbf;
+}
+
+.down-arrow a:hover {
+  color: #696969;
+} 
+
+.logo {
+  height: 50px;
+  width: 60px;
+  border-radius: 60%;
+}
+
+.jumbotron {
+  width: 100vw !important;
+  max-width: 100%!important;
+}
+
+.landing {
+  position: relative;
+
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  border-radius: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.entity-logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.content {
+  background-color: rgba(59, 59, 59, 0.9) !important;
+}
+
+.about-logo {
+  height: 100px;
+  width: 120px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 60%;
+}
+
+#uldir-video-gallery,
+#uldir-text {
+  display: block;
+}
+
+#uldir-text,
+#legion-text,
+#temp-raid-text {
+  font-family: wow;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 2px 0 #000,
+    3px 3px 0 #000;
+  color: darkgray;
+  margin-bottom: -5px;
+  margin-top: 5px;
+}
+
+#legion-text {
+  display: none;
+}
+
+#legion-video-gallery {
+  display: none;
+}
+
+#legion-video-gallery a {
+  position: relative;
+}
+
+#legion-video-gallery a img,
+#uldir-video-gallery a img,
+#temp-raid-video-gallery a img {
+  transition: all ease 0.5s;
+  max-width: 275px;
+}
+
+#legion-video-gallery a:hover,
+#uldir-video-gallery a:hover,
+#temp-raid-video-gallery a img:hover {
+  text-decoration: none;
+}
+
+#legion-video-gallery a img:hover,
+#uldir-video-gallery a img:hover,
+#temp-raid-video-gallery a img:hover {
+  transform: scale(0.92);
+}
+
+#temp-raid-video-gallery,
+#temp-raid-text {
+  display: none;
+}
+
+#temp-raid-video-gallery a {
+  position: relative;
+}
+
+.boss-title {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 4px;
+  transform: translateX(-50%);
+  color: #c0bfbf;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 2px 0 #000,
+    2px 2px 0 #000;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.dropdown-menu {
+  width: 100%;
+  text-align: center;
+}
+
+.dropdown-menu a:active {
+  background-color: #29a53b;
+}
+
+.navbar {
+  transition: background-color 1s ease 0s;
+}
+
+.navbar-brand {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.navbar.solid {
+  background-color: #222 !important;
+  transition: background-color 1s ease 0s;
+  /* box-shadow: 0 0 4px grey; */
+}
+
+.navbar-dark .navbar-nav .nav-item a {
+  text-transform: uppercase;
+  font-weight: 600;
+  border-bottom: 3px solid transparent;
+  color: rgba(189, 186, 186, 0.9) !important;
+  transition: all 0.6s ease;
+  
+  /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000; */
+}
+
+.navbar-dark .navbar-nav .nav-item a:hover {
+  border-bottom: 3px solid #29a53b !important;
+  color: white !important;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+  color: white !important;
+}
+
+.active {
+  border-bottom: 3px solid #29a53b !important;
+  color: white !important;
+}
+
+.anchor-about {
+  display: block;
+  position: relative;
+  top: -90px;
+  visibility: hidden;
+}
+
+.anchor-videos {
+  display: block;
+  position: relative;
+  top: -50px;
+  visibility: hidden;
+}
+
+.anchor-apply {
+  display: block;
+  position: relative;
+  top: -95px;
+  visibility: hidden;
+}
+
+/* .underline {
+  border-bottom: 5px solid #29a53b;
+} */
+
+.asterisk {
+  color: #35bd49;
+}
+
+#apply button {
+  font-family: entity;
+  color: #c0bfbf;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    2px 2px 0 #000;
+}
+
+.form-control:focus {
+  border-color: #35bd49;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(53, 189, 73, 0.6);
+}
+
+.form-text {
+  color: #aca9a9 !important;
+}
+
+.btn-group,
+.btn-group .btn {
+  width: 100%;
+}
+
+.grayscale {
+  filter: grayscale(100%);
+}
+
+.bfa-btn {
+  font-family: wow;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  color: darkgray!important;
+  background-color: #051836!important;
+  border-color: #051836!important;
+  
+}
+
+.bfa-btn:hover {
+  color: darkgray!important;
+  background-color: #041228!important;
+  border-color: #041228!important;
+}
+
+.bfa-btn:active {
+  color: darkgray!important;
+  background-color: #041228!important;
+  border-color: #041228!important;
+}
+
+.bfa-dropdown {
+  background-color: #051836!important;
+}
+
+.bfa-dropdown-item {
+  color: darkgray!important;
+  font-family: wow;
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  background-color: #051836!important;
+}
+
+.bfa-dropdown-item:hover {
+  background-color: #041228!important;
+}
+
+#uldir-link {
+  position: relative;
+}
+
+#uldir-img {
+  position: absolute;
+  right: 30%;
+  top: 20%;
+}
+
+.legion-btn {
+  font-family: wow;
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  color: #5bbf22 !important;
+  background-color: #222 !important;
+  border-color: #1b1b1b !important;
+}
+
+.legion-btn:hover{
+  background-color: #1a1a1a !important;
+  border-color: #222 !important;
+}
+
+.legion-dropdown {
+  background-color: #222;
+}
+
+.legion-dropdown-item {
+  color: #5bbf22 !important;
+  font-family: wow;
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+}
+
+.legion-dropdown-item:hover,
+.legion-dropdown-item:active {
+  background-color: #1a1a1a !important;
+}
+
+#antorus-link {
+  position: relative;
+}
+
+#antorus-img {
+  position: absolute;
+  right: 30%;
+}
+
+/* 
+************************************************************************************************* 
+Stream Page Styles 
+*/
+.stream-nav {
+  background-color: #222 !important;
+}
+
+.stream-nav .navbar-brand {
+  opacity: 1!important;
+}
+
+.streams {
+  height: 1050px;
+  width: 100vw!important;
+  background-color: rgba(59, 59, 59, 0.9) !important;
+  padding-top: 90px;
+}
+
+.streams button {
+  font-family: entity;
+  color: #c0bfbf;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  font-size: 1.5rem;
+}
+
+.streams button:hover {
+  color: #c0bfbf;
+}
+
+
+.stream-heading {
+  font-size: 4rem;
+  color: #c0bfbf;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 3px 0 #000,
+    4px 4px 0 #000;
+  text-decoration: underline;
+}
+
+.res {
+  padding: 10px 20px;
+  border: 8px solid;
+  border-color: rgba(148, 148, 148, 0.801);
+  border-radius: 10px;
+  background-color: #333;
+  color: rgba(241, 255, 255, 0.9);
+}
+
+.res a {
+  color: white;
+}
+
+.res .row:hover {
+  background: #35bd49;
+  border-color: #35bd49;
+}
+.res .row:hover img {
+  border-color: #35bd49;
+}
+
+.res .row {
+  margin: 10px 0px;
+  padding: 10px;
+  border: 1px solid #c0bfbf;
+  border-radius: 5px;
+}
+
+.res a {
+  text-decoration: none;
+}
+
+.logo img {
+  height: 50px;
+  width: 50px;
+  border: 1px solid #c0bfbf;
+}
+
+.name {
+  margin-left: 20px;
+}
+
+#statusdescription {
+  padding: 15px 0px;
+}
+
+.captcha {
+  width: 304px;
+  margin: 0 auto;
+}
+
+/* 
+************************************************************************************************* 
+Roster Page Styles 
+*/
+.roster {
+  height: 100vh;
+  width: 100vw!important;
+  background-color: rgba(59, 59, 59, 0.9) !important;
+  padding-top: 90px;
+}
+
+#roster {
+  width: 100%;
+  height: 700px;
+}
+
+/* 
+************************************************************************************************* 
+*/
+@media (min-width: 992px) {
+  .navbar-dark .navbar-nav .nav-link.active {
+    border-bottom: 3px solid #35bd49 !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .roster {
+    height: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .res {
+    overflow: scroll;
+    max-height: 600px;
+  }
+}
+
+@media (max-width: 690px) {
+  #uldir-video-gallery a img,
+  #legion-video-gallery a img,
+  #temp-raid-video-gallery a img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 550px) {
+  .down-arrow {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    background-image: url(../img/mobile_background.jpg) !important;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  .entity-header-text {
+    font-size: 6rem !important;
+  }
+
+  .realm-text {
+    font-size: 2rem !important;
+  }
+}

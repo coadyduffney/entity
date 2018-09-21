@@ -15,7 +15,6 @@ GREEN -> #35bd49
 BLUE -> #264e8c
 */
 
-
 body {
   background-image: url(../img/bfa_background.jpg);
   background-size: cover;
@@ -25,7 +24,8 @@ body {
   position: relative;
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+  /* Code for Firefox */
   color: white;
   background: #35bd49;
 }
@@ -91,7 +91,8 @@ h3 {
   left: 0;
   right: 0;
   bottom: 25px;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 2px 0 #000, 2px 2px 0 #000;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 2px 0 #000,
+    2px 2px 0 #000;
 }
 
 .down-arrow a {
@@ -100,7 +101,7 @@ h3 {
 
 .down-arrow a:hover {
   color: #696969;
-} 
+}
 
 .logo {
   height: 50px;
@@ -110,7 +111,7 @@ h3 {
 
 .jumbotron {
   width: 100vw !important;
-  max-width: 100%!important;
+  max-width: 100% !important;
 }
 
 .landing {
@@ -143,13 +144,12 @@ h3 {
   border-radius: 60%;
 }
 
-
 .expectations {
   padding: 0;
 }
 
 .expectations li {
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
 }
 
 #uldir-video-gallery,
@@ -159,7 +159,8 @@ h3 {
 
 #uldir-text,
 #legion-text,
-#temp-raid-text {
+#siege-of-zuldazar-text,
+#crucible-of-storms-text {
   font-family: wow;
   text-decoration: none;
   letter-spacing: 2px;
@@ -184,29 +185,34 @@ h3 {
 
 #legion-video-gallery a img,
 #uldir-video-gallery a img,
-#temp-raid-video-gallery a img {
+#siege-of-zuldazar-video-gallery a img,
+#crucible-of-storms-video-gallery a img {
   transition: all ease 0.5s;
   max-width: 275px;
 }
 
 #legion-video-gallery a:hover,
 #uldir-video-gallery a:hover,
-#temp-raid-video-gallery a img:hover {
+#siege-of-zuldazar-video-gallery a img:hover,
+#crucible-of-storms-video-gallery a img:hover {
   text-decoration: none;
 }
 
 #legion-video-gallery a img:hover,
 #uldir-video-gallery a img:hover,
-#temp-raid-video-gallery a img:hover {
+#siege-of-zuldazar-video-gallery a img:hover,
+#crucible-of-storms-video-gallery a img:hover {
   transform: scale(0.92);
 }
 
-#temp-raid-video-gallery,
-#temp-raid-text {
+#siege-of-zuldazar-video-gallery,
+#siege-of-zuldazar-text,
+#crucible-of-storms-video-gallery,
+#crucible-of-storms-text {
   display: none;
 }
 
-#temp-raid-video-gallery a {
+#siege-of-zuldazar-video-gallery a {
   position: relative;
 }
 
@@ -257,7 +263,7 @@ h3 {
   border-bottom: 3px solid transparent;
   color: rgba(189, 186, 186, 0.9) !important;
   transition: all 0.6s ease;
-  
+
   /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000; */
 }
@@ -335,38 +341,37 @@ h3 {
   font-family: wow;
   font-size: 1.5rem;
   letter-spacing: 2px;
-  color: darkgray!important;
-  background-color: #051836!important;
-  border-color: #051836!important;
-  
+  color: darkgray !important;
+  background-color: #051836 !important;
+  border-color: #051836 !important;
 }
 
 .bfa-btn:hover {
-  color: darkgray!important;
-  background-color: #041228!important;
-  border-color: #041228!important;
+  color: darkgray !important;
+  background-color: #041228 !important;
+  border-color: #041228 !important;
 }
 
 .bfa-btn:active {
-  color: darkgray!important;
-  background-color: #041228!important;
-  border-color: #041228!important;
+  color: darkgray !important;
+  background-color: #041228 !important;
+  border-color: #041228 !important;
 }
 
 .bfa-dropdown {
-  background-color: #051836!important;
+  background-color: #051836 !important;
 }
 
 .bfa-dropdown-item {
-  color: darkgray!important;
+  color: darkgray !important;
   font-family: wow;
   letter-spacing: 1px;
   font-size: 1.3rem;
-  background-color: #051836!important;
+  background-color: #051836 !important;
 }
 
 .bfa-dropdown-item:hover {
-  background-color: #041228!important;
+  background-color: #041228 !important;
 }
 
 #uldir-link {
@@ -388,7 +393,7 @@ h3 {
   border-color: #1b1b1b !important;
 }
 
-.legion-btn:hover{
+.legion-btn:hover {
   background-color: #1a1a1a !important;
   border-color: #222 !important;
 }
@@ -427,12 +432,12 @@ Stream Page Styles
 }
 
 .stream-nav .navbar-brand {
-  opacity: 1!important;
+  opacity: 1 !important;
 }
 
 .streams {
   height: 1050px;
-  width: 100vw!important;
+  width: 100vw !important;
   background-color: rgba(59, 59, 59, 0.9) !important;
   padding-top: 90px;
 }
@@ -448,7 +453,6 @@ Stream Page Styles
 .streams button:hover {
   color: #c0bfbf;
 }
-
 
 .stream-heading {
   font-size: 4rem;
@@ -515,7 +519,7 @@ Roster Page Styles
 */
 .roster {
   height: 100vh;
-  width: 100vw!important;
+  width: 100vw !important;
   background-color: rgba(59, 59, 59, 0.9) !important;
   padding-top: 90px;
 }

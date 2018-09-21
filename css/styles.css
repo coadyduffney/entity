@@ -143,6 +143,15 @@ h3 {
   border-radius: 60%;
 }
 
+
+.expectations {
+  padding: 0;
+}
+
+.expectations li {
+  margin-bottom: .75rem;
+}
+
 #uldir-video-gallery,
 #uldir-text {
   display: block;

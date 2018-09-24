@@ -32,11 +32,12 @@ try {
     //Recipients
     $mail->setFrom('noreply@entity-guild.online');
     $mail->addAddress('coadyduffney@gmail.com');     // Add a recipient
-    $mail->addCC('Dawgs9604@gmail.com');
-    $mail->addCC('darkafflictionlorekeeper@hotmail.com');
-    $mail->addCC('zilite.zilite@gmail.com');
-    $mail->addCC('sindorein.thalassian@gmail.com');
-    $mail->addCC('bloodhawkbomber@gmail.com');
+    // $mail->addCC('Dawgs9604@gmail.com');
+    // $mail->addCC('coadyduffney@gmail.com');
+    // $mail->addCC('darkafflictionlorekeeper@hotmail.com');
+    // $mail->addCC('zilite.zilite@gmail.com');
+    // $mail->addCC('sindorein.thalassian@gmail.com');
+    // $mail->addCC('bloodhawkbomber@gmail.com');
 
     // $mail->addReplyTo('info@example.com', 'Information');
     // $mail->addBCC('bcc@example.com');
